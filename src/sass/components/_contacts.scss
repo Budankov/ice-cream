@@ -1,0 +1,162 @@
+.contacts__block {
+    position: absolute;
+    top:-370px;
+    left: 50%;
+    transform: translate(-50%);
+    @media screen and (min-width: 768px) {
+            top: -330px;
+        }
+    @media screen and (min-width: 1200px) {
+        top: -100px;
+    }
+}
+.contacts {
+    @include font-line (22px, 12px);
+    @include font($fs: 12px, $lh: 22px);
+    position: relative;
+    padding-top: 1050px;
+    padding-bottom: 20px;
+    background-color: var(--main-bcg);
+    font-style: normal;
+    letter-spacing: 0.04em;
+    @media screen and (min-width: 768px) {
+    @include font-line (26px, 14px);
+    @include font($fs: 14px, $lh: 26px);
+    padding-top: 285px;
+    }
+    @media screen and (min-width: 1200px) {
+    padding-top: 495px;
+    padding-bottom: 60px;
+    }
+}
+.contacts__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+.contacts__item {
+    padding: 40px 32px;
+    width: 280px;
+    background: var(--card-bcg);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+         margin-bottom: 20px;   
+        }
+        @media screen and (min-width: 768px) {
+        margin-right: 16px;
+        }
+        @media screen and (min-width: 1200px) {
+        margin-right: 32px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        padding: 40px 40px 40px 24px;
+        width: 224px;
+    }
+        @media screen and (min-width: 1200px) {
+            padding: 40px;
+            width: 368px;
+        }
+}
+.contacts__suptitle {
+    margin-bottom: 20px;
+    background: var(--acc-color);
+    border-radius: 4px;
+    display: inline-block;
+    color: var(--first-font-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+     padding: 0 23px;   
+    }
+    @media screen and (min-width: 768px) {
+        padding: 0 10px;
+        margin-bottom: 32px;
+        @include font-line (30px, 16px);
+        @include font($fs: 16px, $fw:500, $lh: 30px);
+        color: var(--first-font-color);
+        }
+}
+.contacts__title {
+    color: var(--second-font-color);
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+    @include font-line (26px, 14px);
+    @include font($fs: 14px, $lh: 26px);
+    font-weight: 500;
+    }
+    @media screen and (min-width: 1200px) {
+    color: var(--first-font-color);    
+    }
+}
+.contacts__title--margin {
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 12px;
+    }
+}
+.contacts__link--orange-color {
+    color: var(--contacts-font-color);
+}
+.contacts__time {
+    color: var(--time-font-color);
+}
+.contacts__time--margin {
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+    }
+}
+.contacts__link {
+    font-weight: 500;
+    text-decoration: none;
+    @media screen and (min-width: 768px) {
+    @include font-line (26px, 14px);
+    @include font($fs: 14px, $lh: 26px); 
+    font-weight: 500;
+    }
+    @media screen and (min-width: 1200px) {
+    @include font-line (29px, 16px);
+    @include font($fs: 16px, $lh: 29px);
+    font-weight: 500;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+    }
+}
+.contacts__link--black-color {
+  color: var(--first-font-color);  
+}
+.contacts__list--line::before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--line-color);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    }
+}
+.buttons {
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+        @media screen and (min-width:1200px) {
+            gap: 24px;
+        }
+}
+.button--size {
+    width: 196px;
+}

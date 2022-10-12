@@ -1,0 +1,141 @@
+%animation {
+	transition-property: transform, color, background-color, box-shadow, fill, border, border-color, opacity, visibility,
+		stroke;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes happy-ice-cream {
+	0% {
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes happy-ice-cream-translate {
+	0% {
+	}
+
+	100% {
+		transform: translateY(40px) translateX(-20px);
+	}
+}
+
+// Faces
+@keyframes face1 {
+	0% {
+	}
+
+	50% {
+		top: 85.11px;
+	}
+
+	100% {
+		top: 127.11px;
+	}
+}
+
+@keyframes face2 {
+	0% {
+		top: 15px;
+		right: 22px;
+	}
+
+	30% {
+		top: -42px;
+	}
+
+	50% {
+		top: 15px;
+		right: -18px;
+		transform: rotateX(17deg) rotateY(15deg);
+		transform-style: preserve-3d;
+	}
+
+	70% {
+		right: 0px;
+		transform: rotateX(13deg) rotateY(12deg);
+	}
+
+	100% {
+		top: 15px;
+		right: 22px;
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+}
+
+@keyframes face1-tablet {
+	0% {
+	}
+
+	50% {
+		top: 65.11px;
+	}
+
+	100% {
+		top: 80.11px;
+	}
+}
+
+@keyframes face2-tablet {
+	0% {
+	}
+
+	30% {
+		top: -35px;
+	}
+
+	50% {
+		top: 13px;
+		right: -15px;
+
+		transform-style: preserve-3d;
+	}
+
+	75% {
+		top: 6px;
+		right: 0px;
+	}
+
+	100% {
+		top: 1px;
+		right: 11px;
+	}
+}
+
+@keyframes face1-mobile {
+	0% {
+	}
+
+	50% {
+		top: 35.11px;
+	}
+
+	100% {
+		top: 47.11px;
+	}
+}
+
+@keyframes face2-mobile {
+	0% {
+	}
+
+	40% {
+		top: -12px;
+	}
+
+	60% {
+		top: 13px;
+		right: -11px;
+		transform: rotateX(22deg) rotateY(21deg);
+		transform-style: preserve-3d;
+	}
+
+	100% {
+		top: 3px;
+		right: 6px;
+	}
+}
